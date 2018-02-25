@@ -12,5 +12,3 @@
 
 # To install pip3 libraries, insert:
 # sudo pip3 install library-name
-
-=======
