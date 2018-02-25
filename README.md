@@ -20,12 +20,32 @@ $ sudo bash gitPush.sh
 Then, follow the instructions.
 
 ## Pulling from a GitHub branch
-**Please note that this command will destroy all unpushed files. Press** `Ctrl` + `C` **to cancel the command.** 
-
 To pull from a GitHub branch using FREEproject OS, enter the following command at the `bash` shell:
 
 ```bash
 $ sudo bash gitPull.sh
+```
+
+Then, follow the instructions.
+
+## Updating FREEproject OS to the newest development build
+**Please note that this command will destroy all unpushed files. Press** `Ctrl` + `C` **to cancel the command.** 
+
+To update all of FREEproject OS's files to the newest from the master branch, enter the following command at the `bash` shell:
+
+```bash
+$ sudo bash updateOS.sh
+```
+
+Then, follow the instructions.
+
+## Build and tidy up FREEproject OS
+**Please note that this command will clear any preferences that you've set. Press** `Ctrl` + `C` **to cancel the command.** 
+
+To build and tidy up all of FREEproject OS's preferences so you can create a `.ISO` image, enter the following command at the `bash` shell:
+
+```bash
+$ sudo bash buildOS.sh
 ```
 
 Then, follow the instructions.
