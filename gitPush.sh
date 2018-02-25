@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#   FREEproject OS API Component
+#   The API component for FREEproject OS.
+#
+#   Contributors are shown at https://freeproject-oss.github.io/contributors.html
+#
+#   (C) FREEproject Open Source Systems and contributors 2018.
+
 echo "Enter what you've changed (commit message):"
 read commit
 
