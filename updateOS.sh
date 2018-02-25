@@ -7,16 +7,18 @@
 #
 #   (C) FREEproject Open Source Systems and contributors 2018.
 
-echo "Enter the branch you want to pull from."
-read branch
+echo "NOTICE: THIS WILL DESTROY ALL UNPUSHED FILES!"
+echo "Press Enter to continue."
+read enter
 
 git fetch
-git checkout $branch
+git checkout master
 git pull
+git reset --hard
 
-echo "Branch pulled. Updating local files."
+echo "Branch master pulled. Updating local files."
 
 sudo cp -rfT apps/ /home/pi/.apps/
 sudo cp -rfT system/ /home/pi/.system/
 
-echo "FREEproject OS is updated to newest push."
+echo "FREEproject OS is updated to newest development build."
