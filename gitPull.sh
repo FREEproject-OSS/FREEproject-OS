@@ -13,6 +13,7 @@ read branch
 
 git fetch
 git checkout $branch
+git pull
 git reset --hard
 
 echo "Branch pulled."
