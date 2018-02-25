@@ -13,4 +13,8 @@
 # To install pip3 libraries, insert:
 # sudo pip3 install library-name
 
+<<<<<<< HEAD
 # DEPTEST2
+=======
+# DEPTEST
+>>>>>>> bb835fa12ebf6cafcc594f497a12f7793affcbe1
