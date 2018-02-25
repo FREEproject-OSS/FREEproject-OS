@@ -12,7 +12,9 @@ read branch
 
 git fetch
 git checkout $branch
+git stash
 git pull
+git stash pop
 
 echo "Branch pulled. Installing dependencies."
 

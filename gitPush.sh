@@ -19,6 +19,8 @@ sudo cp -rfT /home/pi/.system system/
 git add --all
 git commit -m "$commit"
 
+git pull
+
 echo "About to push, please login:"
 git push origin $branch
 
