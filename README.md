@@ -29,7 +29,7 @@ $ sudo bash gitPull.sh
 Then, follow the instructions.
 
 ## Updating FREEproject OS to the newest development build
-**Please note that this command will destroy all unpushed files. Press** `Ctrl` + `C` **to cancel the command.** 
+**Please note that this command will destroy changes to all unpushed files. Press** `Ctrl` + `C` **to cancel the command.** 
 
 To update all of FREEproject OS's files to the newest from the master branch, enter the following command at the `bash` shell:
 

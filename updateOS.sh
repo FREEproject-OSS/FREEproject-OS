@@ -7,7 +7,7 @@
 #
 #   (C) FREEproject Open Source Systems and contributors 2018.
 
-echo "NOTICE: THIS WILL DESTROY ALL UNPUSHED FILES!"
+echo "NOTICE: THIS WILL DESTROY CHANGES TO ALL UNPUSHED FILES!"
 echo "Press Enter to continue."
 read enter
 
