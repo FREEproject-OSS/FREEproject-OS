@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#   FREEproject OS API Component
-#   The API component for FREEproject OS.
+#   FREEproject OS Git Helper
+#   The Git push/pull helper for FREEproject OS.
 #
 #   Contributors are shown at https://freeproject-oss.github.io/contributors.html
 #
