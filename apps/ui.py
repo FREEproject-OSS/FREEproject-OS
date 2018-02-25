@@ -66,6 +66,8 @@ def message(text, title = "Information", mode = "OK"):
 		if messageWidth < 15: messageWidth = 15
 	elif mode == "Yes+No" or mode == "No+Yes":
 		if messageWidth < 12: messageWidth = 12
+	elif mode == "Yes+No+Cancel":
+		if messageWidth < 21: messageWidth = 21
 	
 	term.goto(5, 5)
 	term.echo(term.colour(" " * messageWidth, bg = proscbg, fg = proscfg))
@@ -102,6 +104,10 @@ def message(text, title = "Information", mode = "OK"):
 	elif mode == "No+Yes":
 		button("No", messageWidth, 8 + len(strings), big = True)
 		button("Yes", messageWidth - 6, 8 + len(strings), big = True, bg = proscxb)
+	elif mode == "Yes+No+Cancel":
+		button("Yes", messageWidth - 1, 8 + len(strings), big = True)
+		button("No", messageWidth - 6, 8 + len(strings), big = True)
+		button("Cancel", messageWidth - 15, 8 + len(strings), big = True, bg = proscxb)
 		
 	senseBtn = -1
 	while senseBtn == -1 or senseBtn == -2:
