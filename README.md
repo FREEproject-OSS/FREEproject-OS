@@ -53,7 +53,7 @@ Then, follow the instructions.
 ## Building and tidy-upping FREEproject OS
 **Please note that this command will clear any preferences that you've set. Press** `Ctrl` + `C` **to cancel the command.** 
 
-To build and tidy up all of FREEproject OS's preferences so you can create a `*.ISO` image, enter the following command at the `bash` shell:
+To build and tidy up all of FREEproject OS's preferences so you can create a `*.iso` image, enter the following command at the `bash` shell:
 
 ```bash
 $ sudo bash buildOS.sh
