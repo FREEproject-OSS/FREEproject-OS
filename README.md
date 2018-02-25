@@ -39,7 +39,18 @@ $ sudo bash updateOS.sh
 
 Then, follow the instructions.
 
-## Build and tidy up FREEproject OS
+## Installing dependencies for updates and pulls
+**Please note that this command will automatically run at the end of an update or pull.** 
+
+To update the dependencies that FREEproject OS needs to run, enter the following command at the `bash` shell:
+
+```bash
+$ sudo bash installDeps.sh
+```
+
+Then, follow the instructions.
+
+## Building and tidy-upping FREEproject OS
 **Please note that this command will clear any preferences that you've set. Press** `Ctrl` + `C` **to cancel the command.** 
 
 To build and tidy up all of FREEproject OS's preferences so you can create a `.ISO` image, enter the following command at the `bash` shell:
