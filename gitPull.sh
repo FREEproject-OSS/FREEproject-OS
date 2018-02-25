@@ -23,4 +23,4 @@ echo "Dependencies installed. Updating local files."
 sudo cp -rfT apps/ /home/pi/.apps/
 sudo cp -rfT system/ /home/pi/.system/
 
-echo "FREEproject OS is updated to newest push."
+echo "FREEproject OS is updated to newest pushes."
