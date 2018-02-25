@@ -10,6 +10,9 @@
 from term import *
 import ui
 
+# Code is experimental, and will not be the stable version.
+# Do not change this code partly as some clients may be unusable.
+
 clear(bg = "white", fg = "black")
 
 echo("")

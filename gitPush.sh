@@ -13,8 +13,8 @@ read commit
 echo "Enter what branch you want to push to:"
 read branch
 
-sudo cp -rf /home/pi/.apps apps
-sudo cp -rf /home/pi/.system system
+sudo cp -rfT /home/pi/.apps apps/
+sudo cp -rfT /home/pi/.system system/
 
 git add --all
 git commit -m "$commit"
