@@ -9,7 +9,7 @@ read branch
 sudo cp -rf /home/pi/.apps apps
 sudo cp -rf /home/pi/.system system
 
-git add -all
+git add --all
 git commit -m "$commit"
 
 echo "About to push, please login:"
