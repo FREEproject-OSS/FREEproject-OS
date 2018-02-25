@@ -16,7 +16,11 @@ git checkout master
 git pull
 git reset --hard
 
-echo "Branch master pulled. Updating local files."
+echo "Branch master pulled. Installing dependencies."
+
+sudo bash installDeps.sh
+
+echo "Dependencies installed. Updating local files."
 
 sudo cp -rfT apps/ /home/pi/.apps/
 sudo cp -rfT system/ /home/pi/.system/
