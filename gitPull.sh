@@ -16,3 +16,8 @@ git checkout $branch
 git reset --hard
 
 echo "Branch pulled."
+
+sudo cp -rfT apps /home/pi/.apps
+sudo cp -rfT system /home/pi/.system
+
+echo "FREEproject OS is updated to newest development build."
