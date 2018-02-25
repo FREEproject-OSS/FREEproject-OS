@@ -14,5 +14,3 @@
 # sudo pip3 install library-name
 
 =======
-# DEPTEST
->>>>>>> bb835fa12ebf6cafcc594f497a12f7793affcbe1
