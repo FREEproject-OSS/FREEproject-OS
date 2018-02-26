@@ -2,7 +2,7 @@
 The Python-powered open source operating system by FREEproject.
 
 ## Before following instructions
-Please make sure that you have the following before following instructions below.
+Please make sure that you have the following before following instructions below:
 
 1. You have a bootable copy of FREEproject OS that is in use.
 2. You are in the `/home/pi/.devbuild` directory.
