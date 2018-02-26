@@ -16,18 +16,18 @@ sensory = []
 
 # Profile Elements	# BG = Background
 					# FG = Foreground
-					# CB = ControlBar
-					# XB = CloseBtton
+					# CB = Control Bar
+					# XB = Close Button
 probgbg = "white"	# Profile Background BG
 probgfg = "black"	# Profile Background FG
 profgbg = "lblue"	# Profile UI Element BG
 profgfg = "white"	# Profile UI Element FG
-proscbg = "blue"	# Profile Top Screen BG
-prosccb = "lblue"	# Profile Top Screen CB
-proscxb = "lred"	# Profile Top Screen XB
-proscfg = "white"	# Profile Top Screen FG
-promgbg = "lgrey"	# Profile UI Message BG
-promgfg = "black"	# Profile UI Message FG
+proscbg = "blue"	# Profile Top Of Screen BG
+prosccb = "lblue"	# Profile Top Of Screen CB
+proscxb = "lred"	# Profile Top Of Screen XB
+proscfg = "white"	# Profile Top Of Screen FG
+promgbg = "lgrey"	# Profile Message BG
+promgfg = "black"	# Profile Message FG
 
 def screen(title, closeButton = True, clear = True):
 	if clear: term.clear(bg = probgbg, fg = probgfg)
