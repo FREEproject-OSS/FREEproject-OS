@@ -6,7 +6,7 @@ Please make sure that you have the following before following instructions below
 
 * You have a bootable copy of FREEproject OS that is in use.
 * You are in the `/home/pi/.devbuild` directory.
-* You have the newest version of FREEproject OS, stable or development build. If not, run `$ sudo bash updateOS.sh`.
+* You have the newest version of the FREEproject OS development build. If not, please see [Updating FREEproject OS to the newest development build](https://github.com/FREEproject-OSS/FREEproject-OS#updating-freeproject-os-to-the-newest-development-build).
 * (If you are pushing) You have permission to push to the repo.
 
 ## Setting up to push to GitHub
