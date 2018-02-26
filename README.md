@@ -4,9 +4,9 @@ The Python-powered open source operating system by FREEproject.
 ## Before following instructions
 Please make sure that you have the following before following instructions below:
 
-1. You have a bootable copy of FREEproject OS that is in use.
-2. You are in the `/home/pi/.devbuild` directory.
-3. (If you are pushing) You have permission to push to the repo.
+* You have a bootable copy of FREEproject OS that is in use.
+* You are in the `/home/pi/.devbuild` directory.
+* (If you are pushing) You have permission to push to the repo.
 
 ## Setting up to push to GitHub
 To set up the e-mail and name for changes to the branch, enter the following command at the `bash` shell:
