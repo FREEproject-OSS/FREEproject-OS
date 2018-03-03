@@ -29,13 +29,13 @@ while action == 0:
 		
 		term.goto(23, 6); term.echo( "*** **  *** *** **   **  *   *  *   ** *     *   **".replace("*", term.colour(" ", bg = "white")))
 		term.goto(23, 7); term.echo( "*** *** *** *** * * *   * *    * * *   *    * * *".replace("*", term.colour(" ", bg = "white")))
-		term.goto(23, 8); term.echo( "*   * * *   *   * * *   * *  * *** *   **   * * **".replace("*", term.colour(" ", bg = "white")))
-		term.goto(23, 9); term.echo( "*** **  *** *** **  *   * *  * *   *   *    * *   *".replace("*", term.colour(" ", bg = "white")))
+		term.goto(23, 8); term.echo( "*   * * *   *   * * *   * *  * * * *   **   * *  *".replace("*", term.colour(" ", bg = "white")))
+		term.goto(23, 9); term.echo( "*** **  *** *** **  *   * *  * **  *   *    * *   *".replace("*", term.colour(" ", bg = "white")))
 		term.goto(23, 10); term.echo("*** **  *   *   *   *   * *  * *   *   *    * *   *".replace("*", term.colour(" ", bg = "white")))
 		term.goto(23, 11); term.echo("*   * * *** *** *   *    *  *   **  **  *    *  **".replace("*", term.colour(" ", bg = "white")))
 		
 		ui.button("Login", x = 36, y = 15, big = True)
-		ui.button("Power", x = 70, y = 28, big = False, bg = ui.proscxb, fg = ui.proscfg)
+		ui.button("Power ^", x = 68, y = 28, big = False, bg = ui.proscxb, fg = ui.proscfg)
 		button = ui.sense(screen = False)
 		
 	if button == 0:
