@@ -24,6 +24,8 @@ prolibg = "blue"	# Profile Login BG
 prolifg = "white"	# Profile Login FG
 profgbg = "lblue"	# Profile UI Element BG
 profgfg = "white"	# Profile UI Element FG
+profibg = "lgrey"	# Profile Field Element BG
+profifg = "black"	# Profile Field Element FG
 prodmbg = "lgrey"	# Profile Dropdown Menu BG
 prodmfg = "black"	# Profile Dropdown Menu FG
 proscbg = "blue"	# Profile Top Of Screen BG
@@ -140,6 +142,13 @@ def text(text, x, y, bg = probgbg, fg = probgfg):
 	term.goto(x, y)
 	term.echo(term.colour(text, bg = bg, fg = fg))
 	
+def textbox(text, x, y, width = 20, big = False, bg = profibg, fg = profifg):
+	text = text[:width]
+	spcwidth = width - len(text)
+	text = text + (" " * spcwidth)
+	
+	button(text, x, y, big = big, bg = bg, fg = fg)
+
 def sense(clear = True, screen = True):
 	global sensory
 	mousepos = term.mouse()
