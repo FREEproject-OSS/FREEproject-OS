@@ -37,7 +37,7 @@ def loginBack():
 	term.goto(23, 10); term.echo("*** **  *   *   *   *   * *  * *   *   *    * *   *".replace("*", term.colour(" ", bg = "white")))
 	term.goto(23, 11); term.echo("*   * * *** *** *   *    *  *   **  **  *    *  **".replace("*", term.colour(" ", bg = "white")))
 
-while action == 0:
+while action == 0:	
 	while button == -1:
 		loginBack()
 		
@@ -57,7 +57,9 @@ while action == 0:
 		ui.text("Enter password:", x = 31, y = 15, bg = ui.prolibg, fg = ui.prolifg)
 		ui.textbox(x = 28, y = 17, width = 20, text = "*" * len(passInput), big = True)
 		
-		if True:	# TODO: Create a password saving file, then add condition
+		if passInput == "":
+			ui.message("The hint is: <Hint to go here!>", title = "Login Hint", light = True)
+		elif True:	# TODO: Create a password saving file, then add condition
 			time.sleep(1)
 			ui.message("Incorrect password. Please try again.", title = "Cannot Login", light = True)
 		else:
@@ -76,3 +78,4 @@ while action == 0:
 			term.shexec("sudo reboot")
 		
 		button = -1
+	button = -1
