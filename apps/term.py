@@ -53,6 +53,14 @@ fgcolour = "white"
 
 def shexec(command):
     os.system(command)
+    
+def pyexec(pyfile, sudo = False, python3 = True):
+	if python3:
+		if sudo: os.system("sudo python3 " + pyfile)
+		else: os.system("python3 " + pyfile)
+	else:
+		if sudo: os.system("sudo python " + pyfile)
+		else: os.system("python " + pyfile)
 
 def echo(text):
     shexec("bash -c 'echo -e \"" + colours["background"][bgcolour] + colours["foreground"][fgcolour] + text.replace("'", "\\x27").replace('"', '\\"') + '"\'')
@@ -84,6 +92,24 @@ def key():
 	
 	if outputRead.split() == []:
 		return " "
+	else:
+		return outputRead.split()[0]
+		
+def keytimeout(time = 3, default = " "):
+	if time <= 0: raise ValueError("Length of timeout cannot be less than 1")
+	
+	while time != 0:
+		shexec("sudo bash ~/.apps/api/getkeytimeout.sh")
+		output = open("/home/pi/.temp/getkeytimeout", "r")
+		outputRead = output.read()
+		
+		if outputRead.split() != []:
+			time = 0
+		else:
+			time -= 1
+	
+	if outputRead.split() == []:
+		return default
 	else:
 		return outputRead.split()[0]
 
