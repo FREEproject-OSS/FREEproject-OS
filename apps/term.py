@@ -76,6 +76,16 @@ def mouse():
 	output = open("/home/pi/.temp/getmouse", "r")
 	outputRead = output.read()
 	return [int(int(outputRead.split()[0]) / 7.94), int(int(outputRead.split()[1]) / 15)]
+	
+def key():
+	shexec("sudo bash ~/.apps/api/getkey.sh")
+	output = open("/home/pi/.temp/getkey", "r")
+	outputRead = output.read()
+	
+	if outputRead.split() == []:
+		return " "
+	else:
+		return outputRead.split()[0]
 
 def colour(text, bg = bgcolour, fg = fgcolour, revert = True):
 	if revert:
