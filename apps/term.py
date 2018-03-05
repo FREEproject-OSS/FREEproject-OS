@@ -66,7 +66,7 @@ def echo(text):
     shexec("bash -c 'echo -e \"" + colours["background"][bgcolour] + colours["foreground"][fgcolour] + text.replace("'", "\\x27").replace('"', '\\"') + '"\'')
 
 def prompt(text = ""):
-	return input()
+	return input(text)
 
 def clear(bg = bgcolour, fg = fgcolour):
 	global bgcolour, fgcolour
