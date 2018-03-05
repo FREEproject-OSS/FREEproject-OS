@@ -51,7 +51,7 @@ def screen(title, closeButton = True, clear = True):
 		term.goto(80, 0)
 		term.echo(term.colour("X", bg = proscxb, fg = proscfg))
 	
-def message(text, title = "Information", mode = "OK"):
+def message(text, title = "Information", mode = "OK", light = False):
 	text = text[:580]
 	
 	wrapper = textwrap.TextWrapper(break_long_words = True, break_on_hyphens = True)
@@ -76,9 +76,11 @@ def message(text, title = "Information", mode = "OK"):
 		if messageWidth < 21: messageWidth = 21
 	
 	term.goto(5, 5)
-	term.echo(term.colour(" " * messageWidth, bg = proscbg, fg = proscfg))
+	if light: term.echo(term.colour(" " * messageWidth, bg = prosccb, fg = proscfg))
+	else: term.echo(term.colour(" " * messageWidth, bg = proscbg, fg = proscfg))
 	term.goto(5, 5)
-	term.echo(term.colour(title, bg = proscbg, fg = proscfg))
+	if light: term.echo(term.colour(title, bg = prosccb, fg = proscfg))
+	else: term.echo(term.colour(title, bg = proscbg, fg = proscfg))
 	term.goto(5, 6)
 	term.echo(term.colour(" " * messageWidth, bg = promgbg, fg = promgfg))
 	
@@ -142,12 +144,20 @@ def text(text, x, y, bg = probgbg, fg = probgfg):
 	term.goto(x, y)
 	term.echo(term.colour(text, bg = bg, fg = fg))
 	
-def textbox(text, x, y, width = 20, big = False, bg = profibg, fg = profifg):
+def textbox(x, y, width = 20, text = "", big = False, bg = profibg, fg = profifg):
 	text = text[:width]
 	spcwidth = width - len(text)
 	text = text + (" " * spcwidth)
 	
 	button(text, x, y, big = big, bg = bg, fg = fg)
+
+def tbinput(x, y, big = False, bg = profibg, fg = profifg):
+	if big: x +=1; y += 1
+	
+	term.echo(term.colour("", bg = bg, fg = fg, revert = False))
+	term.goto(x, y)
+	
+	return term.prompt()
 
 def sense(clear = True, screen = True):
 	global sensory
