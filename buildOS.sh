@@ -11,6 +11,10 @@ echo "NOTICE: THIS WILL CLEAR ANY PREFERENCES!"
 echo "Press Enter to continue."
 read enter
 
+echo "Clearing temporary files..."
+
+sudo rm -f /home/pi/.temp/*
+
 echo "Resetting git credentials..."
 
 sudo git config user.email ""
