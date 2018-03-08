@@ -7,13 +7,16 @@
 #
 #   (C) FREEproject Open Source Systems and contributors 2018.
 
-echo "NOTICE: THIS WILL CLEAR ANY PREFERENCES!"
+echo "NOTICE: THIS WILL CLEAR ANY SETTINGS!"
 echo "Press Enter to continue."
 read enter
 
 echo "Clearing temporary files..."
 
 sudo rm -f /home/pi/.temp/*
+
+echo "Resetting settings..."
+sudo cp -rfT /home/pi/.system/defaultSettings/ /home/pi/.settings/
 
 echo "Resetting git credentials..."
 
