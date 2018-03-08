@@ -48,6 +48,7 @@ while action == 0:
 	if button == 0:
 		loginBack()
 		
+		ui.text("For a hint, leave the password field blank.", x = 2, y = 29, bg = ui.prolibg, fg = ui.prolifg)
 		ui.text("Enter password:", x = 31, y = 15, bg = ui.prolibg, fg = ui.prolifg)
 		ui.textbox(x = 28, y = 17, width = 20, big = True)
 		passInput = ui.tbinput(x = 28, y = 17, big = True)
@@ -57,13 +58,17 @@ while action == 0:
 		ui.text("Enter password:", x = 31, y = 15, bg = ui.prolibg, fg = ui.prolifg)
 		ui.textbox(x = 28, y = 17, width = 20, text = "*" * len(passInput), big = True)
 		
+		passFile = open("/home/pi/.settings/password", "r")
+		passReal = passFile.read()[:-1]
+		
 		if passInput == "":
 			ui.message("The hint is: <Hint to go here!>", title = "Login Hint", light = True)
-		elif True:	# TODO: Create a password saving file, then add condition
+		elif passInput == passReal:
+			if ui.message("Correct password. Would you like to go to the desktop (still in development)?", title = "Login Success", mode = "No+Yes", light = True) == 1:
+				action = 1
+		else:
 			time.sleep(1)
 			ui.message("Incorrect password. Please try again.", title = "Cannot Login", light = True)
-		else:
-			action = 1
 		
 		button = -1
 	elif button == 1:

@@ -52,6 +52,8 @@ def screen(title, closeButton = True, clear = True):
 		term.echo(term.colour("X", bg = proscxb, fg = proscfg))
 	
 def message(text, title = "Information", mode = "OK", light = False):
+	clearSense()
+	
 	text = text[:580]
 	
 	wrapper = textwrap.TextWrapper(break_long_words = True, break_on_hyphens = True)

@@ -77,7 +77,7 @@ def clear(bg = bgcolour, fg = fgcolour):
 	shexec("clear")
 
 def goto(x, y):
-	# Size of terminal screen (1-indexed) is x: 80 y: 31 (suggested 30 for no newline).
+	# Size of terminal screen (1-indexed) is x: 80 y: 30 (suggested 29 for no newline).
 	shexec("tput cup " + str(y) + " " + str(x))
 	
 def mouse():
