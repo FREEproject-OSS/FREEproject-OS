@@ -62,13 +62,16 @@ while action == 0:
 		passReal = passFile.read()[:-1]
 		
 		if passInput == "":
-			ui.message("The hint is: <Hint to go here!>", title = "Login Hint", light = True)
+			hintFile = open("/home/pi/.settings/hint", "r")
+			hint = hintFile.read()[:-1]
+			
+			ui.message("The hint is: " + hint, title = "Login Hint", light = True)
 		elif passInput == passReal:
 			if ui.message("Correct password. Would you like to go to the desktop (still in development)?", title = "Login Success", mode = "No+Yes", light = True) == 1:
 				action = 1
 		else:
 			time.sleep(1)
-			ui.message("Incorrect password. Please try again.", title = "Cannot Login", light = True)
+			ui.message("Incorrect password. Please try again. If you have forgot your password, leave the password field blank for a hint.", title = "Cannot Login", light = True)
 		
 		button = -1
 	elif button == 1:
