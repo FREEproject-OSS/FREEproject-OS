@@ -87,3 +87,5 @@ while action == 0:
 		
 		button = -1
 	button = -1
+
+term.pyexec("home.py")
