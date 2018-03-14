@@ -40,9 +40,13 @@ echo(" Booted FREEproject OS.")
 echo(" Build: Development.")
 echo(" Would you like to open Bash or go to Login? " + colour("[b/L] after 3 seconds", bg = "white", fg = "dgrey"))
 
-login = keytimeout(time = 3, default = "l")
-
-if login == "l" or login == "L":
-	pyexec("/home/pi/.apps/login.py")
-else:
-	shexec("lxterminal")
+asking = True
+while asking:
+	login = keytimeout(time = 3, default = "l")
+	
+	if login == "l" or login == "L":
+		asking = False
+		pyexec("/home/pi/.apps/login.py")
+	elif login == "b" or login == "B":
+		asking = False
+		shexec("lxterminal")
