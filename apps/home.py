@@ -11,3 +11,7 @@ import term
 import ui
 
 # TODO: Create a home screen.
+ui.screen("Home", closeButton = False)
+ui.message("The home screen is still in development.")
+
+term.pyexec("login.py")

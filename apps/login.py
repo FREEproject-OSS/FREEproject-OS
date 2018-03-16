@@ -67,8 +67,7 @@ while action == 0:
 			
 			ui.message("The hint is: " + hint, title = "Login Hint", light = True)
 		elif passInput == passReal:
-			if ui.message("Correct password. Would you like to go to the desktop (still in development)?", title = "Login Success", mode = "No+Yes", light = True) == 1:
-				action = 1
+			action = 1
 		else:
 			time.sleep(1)
 			ui.message("Incorrect password. Please try again. If you have forgot your password, leave the password field blank for a hint.", title = "Cannot Login", light = True)
