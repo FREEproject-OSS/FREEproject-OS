@@ -85,6 +85,7 @@ while action == 0:
 			term.shexec("sudo reboot")
 		
 		button = -1
+		
 	button = -1
 
 term.pyexec("home.py")
