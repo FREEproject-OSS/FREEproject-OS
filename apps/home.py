@@ -14,4 +14,4 @@ import ui
 ui.screen("Home", closeButton = False)
 ui.message("The home screen is still in development.")
 
-term.pyexec("login.py")
+term.pyexec("~/.apps/login.py")

@@ -88,4 +88,4 @@ while action == 0:
 		
 	button = -1
 
-term.pyexec("home.py")
+term.pyexec("~/.apps/home.py")
