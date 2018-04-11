@@ -18,7 +18,7 @@ def loginBack():
 	term.clear(bg = ui.prolibg, fg = ui.prolifg)
 	
 	term.goto(0, 0)
-	term.echo(time.strftime("%H:%M ", time.gmtime()) + term.colour(time.strftime("%A %d %B %Y", time.gmtime()), bg = ui.prolibg, fg = "lgrey"))
+	term.echo(time.strftime("%H:%M ", time.localtime()) + term.colour(time.strftime("%A %d %B %Y", time.gmtime()), bg = ui.prolibg, fg = "lgrey"))
 	
 	term.goto(5, 5); term.echo( "   " + term.colour("          ", bg = "lblue").replace("*", term.colour(" ", bg = "black") + term.colour("", bg = "lblue", revert = False)))
 	term.goto(5, 6); term.echo( " " + term.colour("   ***        ", bg = "lblue").replace("*", term.colour(" ", bg = "black") + term.colour("", bg = "lblue", revert = False)))

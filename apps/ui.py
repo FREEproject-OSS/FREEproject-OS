@@ -43,7 +43,7 @@ def screen(title, closeButton = True, clear = True):
 	term.goto(0, 0)
 	term.echo(term.colour(" " * 5, bg = prosccb, fg = proscfg))
 	term.goto(0, 0)
-	term.echo(term.colour(time.strftime("%H:%M", time.gmtime()), bg = prosccb, fg = proscfg))
+	term.echo(term.colour(time.strftime("%H:%M", time.localtime()), bg = prosccb, fg = proscfg))
 	term.goto(6, 0)
 	term.echo(term.colour(title, bg = proscbg, fg = proscfg))
 	
