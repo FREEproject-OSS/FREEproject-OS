@@ -10,7 +10,7 @@
 import term
 import ui
 
-# TODO: Create a home screen.
+# TODO: Create a Home screen.
 ui.screen("Home", closeButton = False)
 ui.message("The Home screen is still in development.")
 
