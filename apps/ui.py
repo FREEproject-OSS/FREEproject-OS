@@ -154,7 +154,7 @@ def textbox(x, y, width = 20, text = "", big = False, bg = profibg, fg = profifg
 	button(text, x, y, big = big, bg = bg, fg = fg)
 
 def tbinput(x, y, big = False, bg = profibg, fg = profifg):
-	if big: x +=1; y += 1
+	if big: x += 1; y += 1
 	
 	term.echo(term.colour("", bg = bg, fg = fg, revert = False))
 	term.goto(x, y)
