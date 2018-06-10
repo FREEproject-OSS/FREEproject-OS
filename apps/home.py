@@ -10,8 +10,8 @@
 import term
 import ui
 
-# TODO: Create a home screen.
+# TODO: Create a Home screen.
 ui.screen("Home", closeButton = False)
-ui.message("The home screen is still in development.")
+ui.message("The Home screen is still in development.")
 
 term.pyexec("~/.apps/login.py")
